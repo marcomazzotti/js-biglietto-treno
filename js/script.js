@@ -11,7 +11,6 @@ console.log(prezzoBase);
 if (età <= 18) {
   prezzoScontato = prezzoBase - (prezzoBase / 100 * 20);
   console.log(prezzoScontato);
-
 } else if (età >= 65) {
   prezzoScontato = prezzoBase - (prezzoBase / 100 * 40);
   console.log(prezzoScontato);
@@ -21,4 +20,4 @@ if (età <= 18) {
 }
 
 //output
-document.getElementById('prezzo-finale').innerHTML = "Il suo biglietto costa:" + " " + prezzoScontato + " " + "euro";
+document.getElementById('prezzo-finale').innerHTML = "Il suo biglietto costa:" + " " + prezzoScontato.toFixed(2) + " " + "euro";
